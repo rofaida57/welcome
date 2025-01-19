@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #050000;
+        }
+
+        
+        .animated-text span {
+            color: black;
+            font-size: 200px;
+            font-weight: bold;
+            text-shadow: 
+                2px 2px 0px white,
+                -2px -2px 0px white,
+                -2px 2px 0px white,
+                2px -2px 0px white,
+                2px 0px 0px white,
+                0px 2px 0px white,
+                -2px 0px 0px white,
+                0px -2px 0px white;
+            animation: colorChange 7s infinite;
+        }
+
+        /* تطبيق التلوين المتحرك لكل حرف */
+        .animated-text span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .animated-text span:nth-child(2) {
+            animation-delay: 1s;
+        }
+
+        .animated-text span:nth-child(3) {
+            animation-delay: 2s;
+        }
+
+        .animated-text span:nth-child(4) {
+            animation-delay: 3s;
+        }
+
+        .animated-text span:nth-child(5) {
+            animation-delay: 4s;
+        }
+
+        .animated-text span:nth-child(6) {
+            animation-delay: 5s;
+        }
+
+        .animated-text span:nth-child(7) {
+            animation-delay: 6s;
+        }
+
+        @keyframes colorChange {
+            0%, 100% {
+                color: black;
+            }
+            7% {
+                color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-text">
+        <span>W</span>
+        <span>e</span>
+        <span>l</span>
+        <span>c</span>
+        <span>o</span>
+        <span>m</span>
+        <span>e</span>
+    </div>
+</body>
+</html>
